@@ -1,0 +1,99 @@
+# Machine-readable index of all skills in this repository.
+# Used by scripts/validate.sh and future install tooling.
+#
+# Schema: schema/skill-manifest.schema.json
+
+version: 1
+
+categories:
+  - id: engineering.development
+    name: Development
+    description: Code quality, reviews, and implementation workflows
+  - id: engineering.git
+    name: Git & Version Control
+    description: Commits, branches, and repository hygiene
+  - id: engineering.architecture
+    name: Architecture
+    description: System design and API contracts
+  - id: engineering.security
+    name: Security
+    description: Threat modeling and secure coding
+  - id: engineering.debugging
+    name: Debugging
+    description: Systematic troubleshooting and root-cause analysis
+  - id: productivity
+    name: Productivity
+    description: Meetings, planning, and personal workflows
+  - id: communication
+    name: Communication
+    description: Email, messaging, and stakeholder updates
+  - id: research
+    name: Research
+    description: Literature review and synthesis
+  - id: documentation
+    name: Documentation
+    description: Technical writing and docs structure
+  - id: data
+    name: Data & Analytics
+    description: Spreadsheets, metrics, and analysis
+
+skills:
+  - id: code-review
+    path: skills/engineering/code-review
+    category: engineering.development
+    kind: engineering
+    maturity: stable
+
+  - id: conventional-commits
+    path: skills/engineering/conventional-commits
+    category: engineering.git
+    kind: engineering
+    maturity: stable
+
+  - id: rest-api-design
+    path: skills/engineering/rest-api-design
+    category: engineering.architecture
+    kind: engineering
+    maturity: stable
+
+  - id: security-review
+    path: skills/engineering/security-review
+    category: engineering.security
+    kind: engineering
+    maturity: stable
+
+  - id: systematic-debugging
+    path: skills/engineering/systematic-debugging
+    category: engineering.debugging
+    kind: engineering
+    maturity: stable
+
+  - id: meeting-notes
+    path: skills/productivity/meeting-notes
+    category: productivity
+    kind: non-engineering
+    maturity: stable
+
+  - id: professional-email
+    path: skills/communication/professional-email
+    category: communication
+    kind: non-engineering
+    maturity: stable
+
+  - id: research-synthesis
+    path: skills/research/research-synthesis
+    category: research
+    kind: non-engineering
+    maturity: stable
+
+  - id: technical-writing
+    path: skills/documentation/technical-writing
+    category: documentation
+    kind: hybrid
+    maturity: stable
+
+  - id: spreadsheet-analysis
+    path: skills/data/spreadsheet-analysis
+    category: data
+    kind: hybrid
+    maturity: stable

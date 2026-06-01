@@ -1,0 +1,18 @@
+id: conventional-commits
+version: 1.0.0
+category: engineering.git
+kind: engineering
+maturity: stable
+tags:
+  - git
+  - commit
+  - changelog
+platforms:
+  cursor:
+    install:
+      type: copy
+      target: .cursor/skills/conventional-commits
+  claude-code:
+    install:
+      type: copy
+      target: .claude/skills/conventional-commits

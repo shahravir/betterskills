@@ -1,0 +1,18 @@
+id: systematic-debugging
+version: 1.0.0
+category: engineering.debugging
+kind: engineering
+maturity: stable
+tags:
+  - debug
+  - troubleshooting
+  - root-cause
+platforms:
+  cursor:
+    install:
+      type: copy
+      target: .cursor/skills/systematic-debugging
+  claude-code:
+    install:
+      type: copy
+      target: .claude/skills/systematic-debugging

@@ -1,0 +1,19 @@
+id: code-review
+version: 1.0.0
+category: engineering.development
+kind: engineering
+maturity: stable
+tags:
+  - review
+  - pull-request
+  - quality
+  - security
+platforms:
+  cursor:
+    install:
+      type: copy
+      target: .cursor/skills/code-review
+  claude-code:
+    install:
+      type: copy
+      target: .claude/skills/code-review

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/skills-catalogue/schema/skill-manifest.schema.json",
+  "title": "Skill Manifest",
+  "type": "object",
+  "required": ["id", "version", "category", "kind", "platforms"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["engineering", "non-engineering", "hybrid"]
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "maturity": {
+      "type": "string",
+      "enum": ["draft", "stable", "deprecated"]
+    },
+    "platforms": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": ["install"],
+        "properties": {
+          "install": {
+            "type": "object",
+            "required": ["type"],
+            "properties": {
+              "type": { "type": "string", "enum": ["copy", "symlink"] },
+              "target": { "type": "string" },
+              "notes": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

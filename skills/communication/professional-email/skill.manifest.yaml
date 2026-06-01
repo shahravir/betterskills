@@ -1,0 +1,18 @@
+id: professional-email
+version: 1.0.0
+category: communication
+kind: non-engineering
+maturity: stable
+tags:
+  - email
+  - writing
+  - business
+platforms:
+  cursor:
+    install:
+      type: copy
+      target: .cursor/skills/professional-email
+  claude-code:
+    install:
+      type: copy
+      target: .claude/skills/professional-email

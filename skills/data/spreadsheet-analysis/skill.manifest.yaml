@@ -1,0 +1,19 @@
+id: spreadsheet-analysis
+version: 1.0.0
+category: data
+kind: hybrid
+maturity: stable
+tags:
+  - excel
+  - csv
+  - data
+  - analytics
+platforms:
+  cursor:
+    install:
+      type: copy
+      target: .cursor/skills/spreadsheet-analysis
+  claude-code:
+    install:
+      type: copy
+      target: .claude/skills/spreadsheet-analysis

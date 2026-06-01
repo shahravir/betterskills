@@ -1,0 +1,18 @@
+id: research-synthesis
+version: 1.0.0
+category: research
+kind: non-engineering
+maturity: stable
+tags:
+  - research
+  - summary
+  - literature
+platforms:
+  cursor:
+    install:
+      type: copy
+      target: .cursor/skills/research-synthesis
+  claude-code:
+    install:
+      type: copy
+      target: .claude/skills/research-synthesis

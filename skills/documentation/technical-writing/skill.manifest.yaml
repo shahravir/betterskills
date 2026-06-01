@@ -1,0 +1,18 @@
+id: technical-writing
+version: 1.0.0
+category: documentation
+kind: hybrid
+maturity: stable
+tags:
+  - docs
+  - readme
+  - api-docs
+platforms:
+  cursor:
+    install:
+      type: copy
+      target: .cursor/skills/technical-writing
+  claude-code:
+    install:
+      type: copy
+      target: .claude/skills/technical-writing

@@ -1,0 +1,48 @@
+name: Propose a new skill
+description: Suggest a skill for the catalogue
+title: "[Skill] "
+labels: ["skill-request"]
+body:
+  - type: input
+    id: skill-name
+    attributes:
+      label: Proposed skill id (lowercase-hyphenated)
+      placeholder: e.g. incident-postmortem
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - engineering
+        - non-engineering
+        - hybrid
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this skill solve?
+    validations:
+      required: true
+  - type: textarea
+    id: triggers
+    attributes:
+      label: Example user prompts that should trigger it
+    validations:
+      required: true
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Platforms you care about
+      options:
+        - label: Cursor
+        - label: Claude Code
+        - label: Windsurf / Cline
+        - label: Chat-only (GPT, etc.)
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Links, similar skills, whether you'd contribute the PR

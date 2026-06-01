@@ -1,0 +1,18 @@
+id: security-review
+version: 1.0.0
+category: engineering.security
+kind: engineering
+maturity: stable
+tags:
+  - security
+  - owasp
+  - threat
+platforms:
+  cursor:
+    install:
+      type: copy
+      target: .cursor/skills/security-review
+  claude-code:
+    install:
+      type: copy
+      target: .claude/skills/security-review

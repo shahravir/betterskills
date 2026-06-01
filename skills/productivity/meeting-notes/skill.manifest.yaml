@@ -1,0 +1,18 @@
+id: meeting-notes
+version: 1.0.0
+category: productivity
+kind: non-engineering
+maturity: stable
+tags:
+  - meetings
+  - notes
+  - action-items
+platforms:
+  cursor:
+    install:
+      type: copy
+      target: .cursor/skills/meeting-notes
+  claude-code:
+    install:
+      type: copy
+      target: .claude/skills/meeting-notes

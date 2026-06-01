@@ -1,0 +1,17 @@
+# Copy this folder to skills/<domain>/<your-skill-id>/ and fill in.
+id: your-skill-id
+version: 1.0.0
+category: engineering.development
+kind: engineering
+maturity: draft
+tags:
+  - example
+platforms:
+  cursor:
+    install:
+      type: copy
+      target: .cursor/skills/your-skill-id
+  claude-code:
+    install:
+      type: copy
+      target: .claude/skills/your-skill-id

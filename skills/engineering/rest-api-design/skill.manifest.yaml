@@ -1,0 +1,19 @@
+id: rest-api-design
+version: 1.0.0
+category: engineering.architecture
+kind: engineering
+maturity: stable
+tags:
+  - api
+  - rest
+  - openapi
+  - http
+platforms:
+  cursor:
+    install:
+      type: copy
+      target: .cursor/skills/rest-api-design
+  claude-code:
+    install:
+      type: copy
+      target: .claude/skills/rest-api-design
