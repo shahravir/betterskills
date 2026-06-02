@@ -97,3 +97,9 @@ skills:
     category: data
     kind: hybrid
     maturity: stable
+
+  - id: sql-query-review
+    path: skills/data/sql-query-review
+    category: data
+    kind: engineering
+    maturity: draft
