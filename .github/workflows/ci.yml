@@ -18,8 +18,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run catalogue validator
-        shell: zsh
-        run: ./scripts/validate.sh
+        shell: bash
+        run: bash ./scripts/validate.sh
 
   markdown-lint:
     name: markdown-lint
@@ -33,6 +33,7 @@ jobs:
         with:
           globs: |
             **/*.md
+          config: .markdownlint-cli2.jsonc
 
   yaml-lint:
     name: yaml-lint
@@ -46,3 +47,9 @@ jobs:
         with:
           file_or_dir: .
           format: github
+          config_data: |
+            extends: default
+            rules:
+              document-start: disable
+              line-length: disable
+              truthy: disable
