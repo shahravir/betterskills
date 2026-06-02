@@ -94,4 +94,4 @@ Be respectful in issues and reviews. Harassment and spam are not tolerated.
 
 ## Questions
 
-Open a [GitHub Discussion](https://github.com/YOUR_ORG/skills-catalogue/discussions) (update URL when published) for skill ideas before large PRs.
+Open a [GitHub issue](https://github.com/shahravir/betterskills/issues) (see the [contributor hub](https://github.com/shahravir/betterskills/issues/17) or [propose a new skill](https://github.com/shahravir/betterskills/issues/new?template=new-skill.yml)) for skill ideas before large PRs.
