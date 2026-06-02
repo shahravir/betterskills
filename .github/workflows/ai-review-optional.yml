@@ -2,7 +2,7 @@ name: AI Review (Optional)
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, labeled]
+    types: [labeled]
     branches: [main]
 
 permissions:
@@ -12,7 +12,7 @@ permissions:
 jobs:
   ai-review:
     name: ai-review
-    if: contains(github.event.pull_request.labels.*.name, 'ai-review')
+    if: github.event.action == 'labeled' && github.event.label.name == 'ai-review'
     runs-on: ubuntu-latest
     steps:
       - name: Post non-blocking AI review notice
