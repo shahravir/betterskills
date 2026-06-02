@@ -1,0 +1,8 @@
+# Default code owner for all files.
+* @shahravir
+
+# Core governance and automation.
+.github/** @shahravir
+catalogue.yaml @shahravir
+schema/** @shahravir
+scripts/** @shahravir
