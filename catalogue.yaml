@@ -103,3 +103,9 @@ skills:
     category: data
     kind: engineering
     maturity: draft
+  - id: pull-request-description
+    path: skills/engineering/pull-request-description/
+    category: engineering.git
+    kind: engineering
+    maturity: draft
+
