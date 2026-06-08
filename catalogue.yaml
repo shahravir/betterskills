@@ -50,6 +50,12 @@ skills:
     kind: engineering
     maturity: stable
 
+  - id: pull-request-description
+    path: skills/engineering/pull-request-description
+    category: engineering.git
+    kind: engineering
+    maturity: draft
+
   - id: rest-api-design
     path: skills/engineering/rest-api-design
     category: engineering.architecture
